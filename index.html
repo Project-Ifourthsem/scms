@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports club management system</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login_page.htm">LOGIN</a></li>
+                    <li><a href="toolbox.html">MEMBERS PROFILE</a></li>
+                    <li><a href="services.htm">SERVICES</a></li>
+                    <li><a href="about.htm">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Sports Club Management System</h1>
+            <p>Sports club Management System is the process whereby records of members are directly stored <br>and can
+                be accessed by the admin interactively in<br> real-time without an intermediary service.
+            </p>
+            <a href="visit.html" class="hero-btn">Visit Us To Know More</a>
+
+            <!-- footer -->
+            <!-- <div class="footer">
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="galery.html">Gallery</a> </li>
+                        <li><a href="calender.htm">Events</a></li>
+                        <li><a href="about.htm">About</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>                
+            </div> -->                     
+        </div>
+
+    </section>
+
+    
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+           
+           <section class="header1"> 
+                <center> <h1>CLUB
+                     <br>
+                     IMAGES
+                 </h1></center>
+                 <div class="container">
+                   <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="2image.jpeg"></div>
+      <div class="swiper-slide"><img src="imageb2.png"></div>
+      <div class="swiper-slide"><img src="image3f.png"></div>
+      <div class="swiper-slide"><img src="image2v.png"></div>
+    
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination">
+
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    
+  </div>
+                 </div>
+                
+              </section>
+              <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+              <script>
+                  const swiper = new Swiper('.swiper', {
+                     autoplay:{
+                         delay:3000,
+                         disableOnInteraction: false,
+                     },
+                    loop: true,
+
+             pagination: {
+                el: '.swiper-pagination',
+                 clickable: true,
+              },
+
+              navigation: {
+            nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+               },
+               });
+
+              </script>
+            </body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="formstyle.css">
+    <div class="box">
+        <div class="main">
+            <h3>Please Login</h3>
+            <form action="register.php" method="post">
+                <input type="text" name="fname" placeholder="FirstName">
+                <input type="text" name="lname" placeholder="LastName">
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <input type="password" placeholder="Confirm Password"><br>
+                Date of Birth:<input type="date" name="date" placeholder="Date of Birth">
+                <select name="gender" id="">
+                    <option value="">Enter Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+                <select name="role">
+                    <option value="none"> Please Select Your Role</option>
+                    <option value="Coach">Coach</option>
+                    <option value="Player">Player</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Board Member">Board Member</option>
+                    <option value="Sponsor/Partner">Sponser</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <select name="sport">
+                    <option value="none">Sport</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Football">Football</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <select name="address">
+                    <option>Province</option>
+                    <option value="Province No. 1">Province No.1</option>
+                    <option value="Madhesh Province">Madhesh Province</option>
+                    <option value="Bagmati Province">Bagmati Province</option>
+                    <option value="Gandaki Province">Gandaki Province</option>
+                    <option value="Lumbini Province">Lumbini Province</option>
+                    <option value="Karnali Province">Karnali Province</option>
+                    <option value="Sudurpashchim Province">Sudurpashchim Province</option>
+                </select><br>
+                <input type="submit" name="submit" value="CREATE ACCOUNT" id="" ><br>
+               <p style="color: white;"> Already have an account?<a href="login_page.htm" style="color: white;">Log In</p></a>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
